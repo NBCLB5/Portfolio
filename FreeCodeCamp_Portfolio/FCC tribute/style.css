@@ -1,0 +1,31 @@
+body {
+    background-color:rgb(200, 200, 200);      
+    }
+.title {
+        text-align: center;
+        font-family: acme;
+        font-size: 60px;
+        font-weight: bold;
+        color: rgb(205 51 51);
+        border: solid;
+        border-color:rgb(30, 144, 255);
+        padding: 14px;
+        margin: 64px;
+        border-width: 5px;
+        border-style: solid;
+        border-radius: 54px;
+        background-color: rgb(168, 168, 168);
+   }
+.center {
+  text-align: center;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+ }
+img {
+  margin: auto; 
+  max-width: 100%;
+  display: block;
+  height: auto;
+}

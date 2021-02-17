@@ -1,0 +1,325 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400, 700";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffe4c4;
+  font-family: "Lato", sans-serif;
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: solid;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 30px black solid;
+  border-radius: 50px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.grid {
+  display: flex;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+.logo {
+  width: 60vw;
+}
+
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+
+.logotwo > img {
+  margin-top: 150px;
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 500px;
+}
+
+@media (max-width: 650px) {
+  .logotwo > img {
+    margin: 0 auto;
+  }
+}
+
+nav {
+  font-weight: 400;
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav li {
+    padding-bottom: 10px;
+  }
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+
+#About-Us {
+  margin-top: 55px;
+}
+
+#About-Us .icon {
+  display: flex;
+  align-items: flex;
+  justify-content: center;
+  height: 125px;
+  width: 17vw;
+  color: black;
+}
+
+@media (max-width: 550px) {
+  #About-Us .icon {
+    display: none;
+  }
+}
+#About-Us .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 25px;
+  width: 65vw;
+  padding: 45px;
+  border-top-width: 5px;
+  border-right-width: 5px;
+  border-bottom-width: 5px;
+  border-left-width: 5px;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+
+@media (max-width: 550px) {
+  #About-Us .desc {
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 650px) {
+  #About-Us {
+    margin-top: 10;
+  }
+}
+
+#Our-Honey {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+#Our-Honey > iframe {
+  max-width: 1000px;
+  width: 100%;
+}
+
+#pricing {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  max-width: 320px;
+  width: calc(100% / 3);
+  margin: 12px 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 30px;
+}
+
+.product > .level {
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin: 15px 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+}
+
+.product > button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+}
+
+#bees {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 10px;
+}
+
+#bees > h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+#bees input[type="email"] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+
+#bees input[type="submit"] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #f1c40f;
+}
+
+#bees input[type="submit"]:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+@media (max-width: 650px) {
+  #bees {
+    margin-top: 120px;
+  }
+}
+
+footer {
+  padding: 2px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer > ul > li {
+  padding: 0 100px;
+}
+
+footer > span {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  font-size: 0.9em;
+  color: #000;
+}
